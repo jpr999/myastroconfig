@@ -19,6 +19,15 @@ return {
 
   -- Set colorscheme to use
   colorscheme = "astrodark",
+  options = {
+    opt = {
+      colorcolumn = "80,100",
+      numberwidth = 4,
+    },
+    g = {
+      autoformat_enabled = true,
+    },
+  },
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -51,6 +60,9 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+    },
+    capabilities = {
+      offsetEncoding = { "utf-16" },
     },
   },
 
